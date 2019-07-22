@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>first post</title>
+      <link href="/2019/07/22/my-first-post/"/>
+      <url>/2019/07/22/my-first-post/</url>
+      
+        <content type="html"><![CDATA[<p>这是我的第一个通过博客发布的文章, 以后没事会在里面写点东西，喜欢就点赞，疼爱就打赏！哈哈<br>点<code>这里</code></p><pre><code class="python">class Solution(object):    def removeElement(self, nums, val):        &quot;&quot;&quot;        :type nums: List[int]        :type val: int        :rtype: int        &quot;&quot;&quot;        left = 0        right = len(nums) - 1        while left &lt; right:            if nums[left] == val and nums[right] != val:                nums[left],nums[right] = nums[right],nums[left]                left += 1                right -= 1            elif nums[right] == val:                right -= 1            elif nums[left] != val:                left += 1       #return left        res = 0        for i in range(len(nums)):            if nums[i] != val:                res += 1            else:                return res</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
