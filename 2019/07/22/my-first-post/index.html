@@ -6,17 +6,17 @@
   <meta name="keywords" content>
   <meta name="description" content="first post | 李先森">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="这是我的第一个通过博客发布的文章, 以后没事会在里面写点东西，喜欢就点赞，疼爱就打赏！哈哈‘’’pythonclass Solution(object):    def removeElement(self, nums, val):        “””        :type nums: List[int]        :type val: int        :rtype: int">
+<meta name="description" content="这是我的第一个通过博客发布的文章, 以后没事会在里面写点东西，喜欢就点赞，疼爱就打赏！哈哈 12345678910111213141516171819202122232425class Solution(object):    def removeElement(self, nums, val):        &quot;&quot;&quot;        :type nums: List[int]        :ty">
 <meta property="og:type" content="article">
 <meta property="og:title" content="first post">
 <meta property="og:url" content="https://lixiansen2048.github.io/2019/07/22/my-first-post/index.html">
 <meta property="og:site_name" content="李先森">
-<meta property="og:description" content="这是我的第一个通过博客发布的文章, 以后没事会在里面写点东西，喜欢就点赞，疼爱就打赏！哈哈‘’’pythonclass Solution(object):    def removeElement(self, nums, val):        “””        :type nums: List[int]        :type val: int        :rtype: int">
+<meta property="og:description" content="这是我的第一个通过博客发布的文章, 以后没事会在里面写点东西，喜欢就点赞，疼爱就打赏！哈哈 12345678910111213141516171819202122232425class Solution(object):    def removeElement(self, nums, val):        &quot;&quot;&quot;        :type nums: List[int]        :ty">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-22T10:24:05.873Z">
+<meta property="og:updated_time" content="2019-07-22T10:29:39.805Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="first post">
-<meta name="twitter:description" content="这是我的第一个通过博客发布的文章, 以后没事会在里面写点东西，喜欢就点赞，疼爱就打赏！哈哈‘’’pythonclass Solution(object):    def removeElement(self, nums, val):        “””        :type nums: List[int]        :type val: int        :rtype: int">
+<meta name="twitter:description" content="这是我的第一个通过博客发布的文章, 以后没事会在里面写点东西，喜欢就点赞，疼爱就打赏！哈哈 12345678910111213141516171819202122232425class Solution(object):    def removeElement(self, nums, val):        &quot;&quot;&quot;        :type nums: List[int]        :ty">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -191,7 +191,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-07-22 18:24:05'>2019-07-22 13:33</time>
+        创建时间:<time class="date" title='更新时间: 2019-07-22 18:29:39'>2019-07-22 13:33</time>
         
     </div>
     <div class="article-meta">
@@ -239,9 +239,8 @@
 </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这是我的第一个通过博客发布的文章, 以后没事会在里面写点东西，喜欢就点赞，疼爱就打赏！哈哈<br>‘’’python<br>class Solution(object):<br>    def removeElement(self, nums, val):<br>        “””<br>        :type nums: List[int]<br>        :type val: int<br>        :rtype: int<br>        “””<br>        left = 0<br>        right = len(nums) - 1<br>        while left &lt; right:<br>            if nums[left] == val and nums[right] != val:<br>                nums[left],nums[right] = nums[right],nums[left]<br>                left += 1<br>                right -= 1<br>            elif nums[right] == val:<br>                right -= 1<br>            elif nums[left] != val:<br>                left += 1<br>       #return left<br>        res = 0<br>        for i in range(len(nums)):<br>            if nums[i] != val:<br>                res += 1<br>            else:<br>                return res</p>
-<p>‘’’</p>
-
+        <p>这是我的第一个通过博客发布的文章, 以后没事会在里面写点东西，喜欢就点赞，疼爱就打赏！哈哈</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">removeElement</span><span class="params">(self, nums, val)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        :type nums: List[int]</span></span><br><span class="line"><span class="string">        :type val: int</span></span><br><span class="line"><span class="string">        :rtype: int</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        left = <span class="number">0</span></span><br><span class="line">        right = len(nums) - <span class="number">1</span></span><br><span class="line">        <span class="keyword">while</span> left &lt; right:</span><br><span class="line">            <span class="keyword">if</span> nums[left] == val <span class="keyword">and</span> nums[right] != val:</span><br><span class="line">                nums[left],nums[right] = nums[right],nums[left]</span><br><span class="line">                left += <span class="number">1</span></span><br><span class="line">                right -= <span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span> nums[right] == val:</span><br><span class="line">                right -= <span class="number">1</span></span><br><span class="line">            <span class="keyword">elif</span> nums[left] != val:</span><br><span class="line">                left += <span class="number">1</span></span><br><span class="line">       <span class="comment">#return left</span></span><br><span class="line">        res = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(nums)):</span><br><span class="line">            <span class="keyword">if</span> nums[i] != val:</span><br><span class="line">                res += <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">return</span> res</span><br></pre></td></tr></table></figure>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 506226294@qq.com </span>
     </div>
@@ -258,7 +257,7 @@
     
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="李先森">李先森</a></p>
     <p><span class="copy-title">发布时间:</span>2019-07-22, 13:33:38</p>
-    <p><span class="copy-title">最后更新:</span>2019-07-22, 18:24:05</p>
+    <p><span class="copy-title">最后更新:</span>2019-07-22, 18:29:39</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/07/22/my-first-post/" title="first post">https://lixiansen2048.github.io/2019/07/22/my-first-post/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
