@@ -64,16 +64,6 @@
 <div class="icon">
     
         
-        <a title="rss" href="/atom.xml" target="_blank">
-            
-                <svg class="iconfont-svg" aria-hidden="true">
-                    <use xlink:href="#icon-rss"></use>
-                </svg>
-            
-        </a>
-        
-    
-        
         <a title="github" href="https://github.com/lixiansen2048" target="_blank">
             
                 <svg class="iconfont-svg" aria-hidden="true">
@@ -237,6 +227,27 @@
         </p>
         
         
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '',
+            clientSecret: '',
+            repo: 'yelog.github.io',
+            owner: 'yelog',
+            admin: ['yelog'],
+            id: location.pathname,
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">©2017 李先森</p>
