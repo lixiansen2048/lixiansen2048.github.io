@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lixiansen2048.github.io/"/>
-  <updated>2019-07-22T09:40:58.094Z</updated>
+  <updated>2019-07-22T10:24:05.873Z</updated>
   <id>https://lixiansen2048.github.io/</id>
   
   <author>
@@ -21,16 +21,15 @@
     <link href="https://lixiansen2048.github.io/2019/07/22/my-first-post/"/>
     <id>https://lixiansen2048.github.io/2019/07/22/my-first-post/</id>
     <published>2019-07-22T05:33:38.000Z</published>
-    <updated>2019-07-22T09:40:58.094Z</updated>
+    <updated>2019-07-22T10:24:05.873Z</updated>
     
-    <content type="html"><![CDATA[<p>这是我的第一个通过博客发布的文章, 以后没事会在里面写点东西，喜欢就点赞，疼爱就打赏！哈哈</p>]]></content>
+    <content type="html"><![CDATA[<p>这是我的第一个通过博客发布的文章, 以后没事会在里面写点东西，喜欢就点赞，疼爱就打赏！哈哈<br>‘’’python<br>class Solution(object):<br>    def removeElement(self, nums, val):<br>        “””<br>        :type nums: List[int]<br>        :type val: int<br>        :rtype: int<br>        “””<br>        left = 0<br>        right = len(nums) - 1<br>        while left &lt; right:<br>            if nums[left] == val and nums[right] != val:<br>                nums[left],nums[right] = nums[right],nums[left]<br>                left += 1<br>                right -= 1<br>            elif nums[right] == val:<br>                right -= 1<br>            elif nums[left] != val:<br>                left += 1<br>       #return left<br>        res = 0<br>        for i in range(len(nums)):<br>            if nums[i] != val:<br>                res += 1<br>            else:<br>                return res</p><p>‘’’</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;这是我的第一个通过博客发布的文章, 以后没事会在里面写点东西，喜欢就点赞，疼爱就打赏！哈哈&lt;/p&gt;
-
+        &lt;p&gt;这是我的第一个通过博客发布的文章, 以后没事会在里面写点东西，喜欢就点赞，疼爱就打赏！哈哈&lt;br&gt;‘’’python&lt;br&gt;class Solution(object):&lt;br&gt;    def removeElement(self, nums, val):&lt;br&gt;     
       
     
     </summary>
