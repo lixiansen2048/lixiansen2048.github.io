@@ -4,12 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="LeetCode第 79 题：单词搜索, 一叶知秋">
-    <meta name="description" content="LeetCode 回溯法专题题目来源：from typing import List
-
-
-class Solution:
-    def exist(self, board: List[List[str]], word: str) -&gt; b">
+    <meta name="keywords" content="LeetCode第 46 题：全排列, 算法初学者">
+    <meta name="description" content="LeetCode 回溯法专题
+题目来源：LeetCode 第 46 题
+回溯法 是一种在探索尝试的过程中来找出所有解的算法。当确定这个候选解不满足求解条件时，就’回溯’返回，尝试其他路径。回溯法是一种选优搜索法，按选优条件向前搜索，以达到目">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +15,7 @@ class Solution:
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>LeetCode第 79 题：单词搜索 | 一叶知秋</title>
+    <title>LeetCode第 46 题：全排列 | 算法初学者</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -45,7 +43,7 @@ class Solution:
                     
                     <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">一叶知秋</span>
+                    <span class="logo-span">算法初学者</span>
                 </a>
             </div>
             
@@ -111,7 +109,7 @@ class Solution:
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">一叶知秋</div>
+        <div class="logo-name">算法初学者</div>
         <div class="logo-desc">
             
             简单、诚实
@@ -246,13 +244,13 @@ class Solution:
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        LeetCode第 79 题：单词搜索
+                        LeetCode第 46 题：全排列
                     </div>
                 </div>
             </div>
@@ -402,7 +400,7 @@ class Solution:
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        149
+                        211
                     </div>
                     
 
@@ -420,36 +418,35 @@ class Solution:
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="LeetCode-回溯法专题"><a href="#LeetCode-回溯法专题" class="headerlink" title="LeetCode 回溯法专题"></a>LeetCode 回溯法专题</h1><h2 id="题目来源："><a href="#题目来源：" class="headerlink" title="题目来源："></a>题目来源：</h2><pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> typing <span class="token keyword">import</span> List
+                <h1 id="LeetCode-回溯法专题"><a href="#LeetCode-回溯法专题" class="headerlink" title="LeetCode 回溯法专题"></a>LeetCode 回溯法专题</h1><hr>
+<h3 id="题目来源：LeetCode-第-46-题"><a href="#题目来源：LeetCode-第-46-题" class="headerlink" title="题目来源：LeetCode 第 46 题"></a>题目来源：<a href="https://leetcode-cn.com/problems/permutations/" target="_blank" rel="noopener">LeetCode 第 46 题</a></h3><blockquote>
+<p><strong>回溯法</strong> 是一种在探索尝试的过程中来找出所有解的算法。当确定这个候选解不满足求解条件时，就’回溯’返回，尝试其他路径。回溯法是一种选优搜索法，按选优条件向前搜索，以达到目标。但当探索到某一步时，发现原先选择并不优或达不到目标，就退回一步重新选择，这种走不通就退回再走的技术就叫回溯法。</p>
+</blockquote>
+<h6 id="代码如下："><a href="#代码如下：" class="headerlink" title="代码如下："></a>代码如下：</h6><pre class=" language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span>object<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">permute</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """</span>
+        <span class="token keyword">def</span> <span class="token function">backtrack</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span>p<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> index <span class="token operator">==</span> len<span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                output<span class="token punctuation">.</span>append<span class="token punctuation">(</span>p<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                <span class="token keyword">return</span>
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> <span class="token operator">not</span> used<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">:</span>
+                    p<span class="token punctuation">.</span>append<span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+                    used<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">True</span>
+                    backtrack<span class="token punctuation">(</span>index <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span>p<span class="token punctuation">)</span>
+                    used<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span>
+                    p<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span>
 
 
-<span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">exist</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> board<span class="token punctuation">:</span> List<span class="token punctuation">[</span>List<span class="token punctuation">[</span>str<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> word<span class="token punctuation">:</span> str<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> bool<span class="token punctuation">:</span>
-
-        <span class="token keyword">def</span> <span class="token function">inArea</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">:</span>
-            <span class="token keyword">return</span> x <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">and</span> x <span class="token operator">&lt;</span> m <span class="token operator">and</span> y <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">and</span> y <span class="token operator">&lt;</span> n
-
-        <span class="token keyword">def</span> <span class="token function">backtrack</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> startx<span class="token punctuation">,</span> starty<span class="token punctuation">)</span><span class="token punctuation">:</span>
-            <span class="token keyword">if</span> index <span class="token operator">==</span> len<span class="token punctuation">(</span>word<span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">:</span>
-                <span class="token keyword">return</span> board<span class="token punctuation">[</span>startx<span class="token punctuation">]</span><span class="token punctuation">[</span>starty<span class="token punctuation">]</span> <span class="token operator">==</span> word<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
-            <span class="token keyword">if</span> board<span class="token punctuation">[</span>startx<span class="token punctuation">]</span><span class="token punctuation">[</span>starty<span class="token punctuation">]</span> <span class="token operator">==</span> word<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">:</span>
-                used<span class="token punctuation">[</span>startx<span class="token punctuation">]</span><span class="token punctuation">[</span>starty<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">True</span>
-                <span class="token keyword">for</span> k <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-                    newx <span class="token operator">=</span> startx <span class="token operator">+</span> d<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
-                    newy <span class="token operator">=</span> starty <span class="token operator">+</span> d<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
-                    <span class="token keyword">if</span> inArea<span class="token punctuation">(</span>newx<span class="token punctuation">,</span> newy<span class="token punctuation">)</span> <span class="token operator">and</span> <span class="token operator">not</span> used<span class="token punctuation">[</span>newx<span class="token punctuation">]</span><span class="token punctuation">[</span>newy<span class="token punctuation">]</span> <span class="token operator">and</span> backtrack<span class="token punctuation">(</span>index <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> newx<span class="token punctuation">,</span> newy<span class="token punctuation">)</span><span class="token punctuation">:</span>
-                        <span class="token keyword">return</span> <span class="token boolean">True</span>
-                used<span class="token punctuation">[</span>startx<span class="token punctuation">]</span><span class="token punctuation">[</span>starty<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span>
-
-        m <span class="token operator">=</span> len<span class="token punctuation">(</span>board<span class="token punctuation">)</span>
-        n <span class="token operator">=</span> len<span class="token punctuation">(</span>board<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-        d <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
-        used <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token boolean">False</span><span class="token punctuation">]</span> <span class="token operator">*</span> n <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>m<span class="token punctuation">)</span><span class="token punctuation">]</span>
-        <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>m<span class="token punctuation">)</span><span class="token punctuation">:</span>
-            <span class="token keyword">for</span> j <span class="token keyword">in</span> range<span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
-                <span class="token keyword">if</span> backtrack<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> i<span class="token punctuation">,</span> j<span class="token punctuation">)</span><span class="token punctuation">:</span>
-                    <span class="token keyword">return</span> <span class="token boolean">True</span>
-        <span class="token keyword">return</span> <span class="token boolean">False</span></code></pre>
+        output <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">if</span> <span class="token operator">not</span> nums<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        used <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token boolean">False</span><span class="token punctuation">]</span> <span class="token operator">*</span> len<span class="token punctuation">(</span>nums<span class="token punctuation">)</span>
+        backtrack<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> output</code></pre>
 
             </div>
             <hr/>
@@ -608,7 +605,7 @@ class Solution:
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《LeetCode第 79 题：单词搜索》
+                    《LeetCode第 46 题：全排列》
                 </span> 由
             <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/23/leetcode-79th/" property="cc:attributionName"
                rel="cc:attributionURL">
@@ -681,15 +678,15 @@ class Solution:
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="LeetCode第 79 题：单词搜索">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="LeetCode第 46 题：全排列">
                         
-                        <span class="card-title">LeetCode第 79 题：单词搜索</span>
+                        <span class="card-title">LeetCode第 46 题：全排列</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在二维平面上采用回溯法
+                            回溯法 是一种通过探索所有可能的候选解来找出所有的解的算法，对于排列组合问题通常使用回溯法
                         
                     </div>
                     <div class="publish-info">
@@ -739,15 +736,15 @@ class Solution:
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="LeetCode第 79 题：单词搜索">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="LeetCode第 46 题：全排列">
                         
-                        <span class="card-title">LeetCode第 79 题：单词搜索</span>
+                        <span class="card-title">LeetCode第 46 题：全排列</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在二维平面上采用回溯法
+                            回溯法 是一种通过探索所有可能的候选解来找出所有的解的算法，对于排列组合问题通常使用回溯法
                         
                     </div>
                     <div class="publish-info">
@@ -819,7 +816,7 @@ class Solution:
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: 一叶知秋<br />'
+            + '来源: 算法初学者<br />'
             + '作者: 李艳祥<br />'
             + '链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
@@ -937,7 +934,7 @@ class Solution:
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">149</span>
+                <span class="white-color">211</span>
             
 
             
