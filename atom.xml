@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>算法初学者</title>
+  <title>初学者</title>
   
   <subtitle>平凡的平淡</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lixiansen2048.github.io/"/>
-  <updated>2019-07-23T06:49:16.130Z</updated>
+  <updated>2019-07-29T05:37:38.003Z</updated>
   <id>https://lixiansen2048.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>边充电边玩手机会爆炸么</title>
+    <link href="https://lixiansen2048.github.io/2019/07/29/phone1/"/>
+    <id>https://lixiansen2048.github.io/2019/07/29/phone1/</id>
+    <published>2019-07-29T04:33:38.000Z</published>
+    <updated>2019-07-29T05:37:38.003Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="边玩手机边充电真的会爆炸么"><a href="#边玩手机边充电真的会爆炸么" class="headerlink" title="边玩手机边充电真的会爆炸么"></a>边玩手机边充电真的会爆炸么</h1><hr><blockquote><p><strong>结论</strong> ： 使用正规充电器，手机边玩边充电发生爆炸的几率几乎为零。注意事项：第一、充电尽量使用原装充电器。第二、不随意搭配充电设备。第三、充电环境温度要适宜。第四、及时清理充电口。第五、尽量不要边玩边充电。</p></blockquote><h3 id="手机爆炸是怎么发生的"><a href="#手机爆炸是怎么发生的" class="headerlink" title="手机爆炸是怎么发生的"></a>手机爆炸是怎么发生的</h3><p>我们通常说的边玩手机边充电、边打电话边充电会发生危险，一般都是指电池的爆炸。</p><blockquote><ol><li>从手机充电的电路设计角度来看，在充电过程中使用手机，手机运行程序所需的电能来源于电源而非电池，这时电池充电跟手机的使用是分开的，互不影响。</li><li>电池充满电后，会停止充电。并且由于电池端电压小于外接电路的电压，电池也不会放电。</li><li>充电状态下的手机可以作为一个正常的电器使用，一般不会发生爆炸，<strong>使用正规充电器，手机边玩边充电发生爆炸的几率几乎为零。</strong>但是如果使用的是劣质或者山寨的充电器，很有可能因为质量不过关，出现手机电路不稳定，造成电池异常发热，导致手机有可能发生爆炸。</li></ol></blockquote><p>大家可能经常从电视上或者新闻中，看到不少因为边充电边玩手机的原因而导致手机爆炸的问题，其实这个问题和电池是没有关系的，主要还是因为充电时使用了不匹配的充电器，或者是第三方充电器。更有甚者，是手机在出厂时，电池就有问题，存在着安全隐患，一般情况下是不会有这种事情发生的。</p><h3 id="怎样充电更安全"><a href="#怎样充电更安全" class="headerlink" title="怎样充电更安全"></a>怎样充电更安全</h3><blockquote><ol><li><strong>充电尽量使用原装充电器。</strong>非原装充电器可能会出现手机充电缓慢、损坏电池的情况。如果使用劣质充电器，还有可能造成安全隐患。</li><li><strong>不随意搭配充电设备。</strong>充电器与USB充电线混用，很可能会导致充电速度变慢，无法给手机充电的情况。为手机充电时建议选择与手机电流适配的充电设备进行充电。</li><li><strong>充电环境温度要适宜。</strong>在低温环境下，锂电池的低温保护机制会使得手机电池不发生化学反应，从而导致充电缓慢的情况发生。温度过高的环境中充电很可能会损失锂电池，造成安全隐患。</li><li><strong>及时清理充电口。</strong>充电口长时间暴露在外面，会产生灰尘堆积，导致手机充电接触不良，影响充电速度。记得定期清洁手机充电口，一笔米娜出现灰尘堵塞。</li><li><strong>尽量不要边玩边充电。</strong>边玩边充电会加剧手机发热。手机长时间处于这种状态，会导致手机寿命急剧缩短，严重时甚至会引发火灾。如果必须边玩边充电，应注意观察手机的情况，一旦出现高温异常，应立即停止操作。</li></ol></blockquote><p><em>【完】</em></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;边玩手机边充电真的会爆炸么&quot;&gt;&lt;a href=&quot;#边玩手机边充电真的会爆炸么&quot; class=&quot;headerlink&quot; title=&quot;边玩手机边充电真的会爆炸么&quot;&gt;&lt;/a&gt;边玩手机边充电真的会爆炸么&lt;/h1&gt;&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lixiansen2048.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="手机" scheme="https://lixiansen2048.github.io/tags/%E6%89%8B%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode第 46 题：全排列</title>

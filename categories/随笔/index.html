@@ -4,8 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="标签, 初学者">
-    <meta name="description" content="标签 | 初学者">
+    <meta name="keywords" content="分类: 随笔, 初学者">
+    <meta name="description" content="分类: 随笔 | 初学者">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>标签 | 初学者</title>
+    <title>分类: 随笔 | 初学者</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -268,49 +268,33 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
     
 
-<div id="tags" class="container chip-container">
+<div id="category-cloud" class="container chip-container">
     <div class="card">
         <div class="card-content">
             <div class="tag-title center-align">
-                <i class="fa fa-tags"></i>&nbsp;&nbsp;文章标签
+                <i class="fa fa-bookmark"></i>&nbsp;&nbsp;文章分类
             </div>
             <div class="tag-chips">
                 
                 
-                <a href="/tags/回溯法/" title="回溯法: 1">
+                
+                <a href="/categories/leetcode-题解/" title="leetcode 题解: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="回溯法" style="background-color: #F9EBEA;">回溯法
+                            style="background-color: #F9EBEA;">leetcode 题解
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/python-3/" title="python 3: 1">
+                <a href="/categories/随笔/" title="随笔: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="python 3" style="background-color: #F5EEF8;">python 3
+                             chip-active "
+                            style="background-color: #F5EEF8;">随笔
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
-                
-                <a href="/tags/数组/" title="数组: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="数组" style="background-color: #D5F5E3;">数组
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/手机/" title="手机: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="手机" style="background-color: #E8F8F5;">手机
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
                 
             </div>
         </div>
@@ -318,31 +302,60 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 </div>
 
     
-    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
-<style type="text/css">
-    #tag-wordcloud {
-        width: 100%;
-        height: 300px;
-    }
-</style>
 
-<div class="container" data-aos="fade-up">
-    <div class="card">
-        <div id="tag-wordcloud" class="card-content"></div>
-    </div>
-</div>
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2019/07/29/phone1/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="边充电边玩手机会爆炸么">
+                            
+                            <span class="card-title">边充电边玩手机会爆炸么</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                看到家人老表群里转发的视频，“边充电边玩手机导致爆炸造成两孩童死亡”，结果去证实了一下，果然是谣言，遂寻思查找资料并写下这篇文章。
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-29
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/随笔/" class="post-category" target="_blank">
+                                    随笔
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
 
-<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
-<script type="text/javascript">
-    
-
-    $('#tag-wordcloud').jQCloud([{"text":"回溯法","weight":1,"link":"https://lixiansen2048.github.io/tags/回溯法/"},{"text":"python 3","weight":1,"link":"https://lixiansen2048.github.io/tags/python-3/"},{"text":"数组","weight":1,"link":"https://lixiansen2048.github.io/tags/数组/"},{"text":"手机","weight":1,"link":"https://lixiansen2048.github.io/tags/手机/"}], {
-        autoResize: true
-    });
-</script>
-    
-
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/手机/" target="_blank">
+                            <span class="chip bg-color">手机</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
 </main>
+
 
 <footer class="page-footer bg-color">
     <div class="container row center-align">
