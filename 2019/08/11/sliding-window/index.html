@@ -4,10 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="LeetCode第 46 题：全排列, 初学者">
-    <meta name="description" content="LeetCode 回溯法专题
-题目来源：LeetCode 第 46 题
-回溯法 是一种在探索尝试的过程中来找出所有解的算法。当确定这个候选解不满足求解条件时，就’回溯’返回，尝试其他路径。回溯法是一种选优搜索法，按选优条件向前搜索，以达到目">
+    <meta name="keywords" content="LeetCode第 3 题：无重复字符的最长子串, 初学者">
+    <meta name="description" content="滑动窗口解无重复字符的最长字串
+题目来源：LeetCode 第 3 题
+滑动窗口 是数组/字符串问题中常用的抽象概念。 窗口通常是在数组/字符串中由开始和结束索引定义的一系列元素的集合。而滑动窗口是可以将两个边界向某一方向“滑动”的窗口。例">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>LeetCode第 46 题：全排列 | 初学者</title>
+    <title>LeetCode第 3 题：无重复字符的最长子串 | 初学者</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -244,13 +244,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        LeetCode第 46 题：全排列
+                        LeetCode第 3 题：无重复字符的最长子串
                     </div>
                 </div>
             </div>
@@ -361,16 +361,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/回溯法/" target="_blank">
-                                <span class="chip bg-color">回溯法</span>
-                            </a>
-                        
                             <a href="/tags/python-3/" target="_blank">
                                 <span class="chip bg-color">python 3</span>
                             </a>
                         
-                            <a href="/tags/数组/" target="_blank">
-                                <span class="chip bg-color">数组</span>
+                            <a href="/tags/哈希表/" target="_blank">
+                                <span class="chip bg-color">哈希表</span>
+                            </a>
+                        
+                            <a href="/tags/滑动窗口/" target="_blank">
+                                <span class="chip bg-color">滑动窗口</span>
                             </a>
                         
                     </div>
@@ -393,21 +393,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-07-23
+                    2019-08-11
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        211
+                        572
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        2 分
                     </div>
                     
                 
@@ -418,35 +418,41 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="LeetCode-回溯法专题"><a href="#LeetCode-回溯法专题" class="headerlink" title="LeetCode 回溯法专题"></a>LeetCode 回溯法专题</h1><hr>
-<h3 id="题目来源：LeetCode-第-46-题"><a href="#题目来源：LeetCode-第-46-题" class="headerlink" title="题目来源：LeetCode 第 46 题"></a>题目来源：<a href="https://leetcode-cn.com/problems/permutations/" target="_blank" rel="noopener">LeetCode 第 46 题</a></h3><blockquote>
-<p><strong>回溯法</strong> 是一种在探索尝试的过程中来找出所有解的算法。当确定这个候选解不满足求解条件时，就’回溯’返回，尝试其他路径。回溯法是一种选优搜索法，按选优条件向前搜索，以达到目标。但当探索到某一步时，发现原先选择并不优或达不到目标，就退回一步重新选择，这种走不通就退回再走的技术就叫回溯法。</p>
+                <h1 id="滑动窗口解无重复字符的最长字串"><a href="#滑动窗口解无重复字符的最长字串" class="headerlink" title="滑动窗口解无重复字符的最长字串"></a>滑动窗口解无重复字符的最长字串</h1><hr>
+<h3 id="题目来源：LeetCode-第-3-题"><a href="#题目来源：LeetCode-第-3-题" class="headerlink" title="题目来源：LeetCode 第 3 题"></a>题目来源：<a href="https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/" target="_blank" rel="noopener">LeetCode 第 3 题</a></h3><blockquote>
+<p><strong>滑动窗口</strong> 是数组/字符串问题中常用的抽象概念。 窗口通常是在数组/字符串中由开始和结束索引定义的一系列元素的集合。而滑动窗口是可以将两个边界向某一方向“滑动”的窗口。例如，我们将 <code>[i, j]</code> 向右滑动 1 个元素，则它将变为 <code>[i+1, j+1]</code>。</p>
 </blockquote>
-<h6 id="代码如下："><a href="#代码如下：" class="headerlink" title="代码如下："></a>代码如下：</h6><pre class=" language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span>object<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">permute</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token triple-quoted-string string">"""
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """</span>
-        <span class="token keyword">def</span> <span class="token function">backtrack</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span>p<span class="token punctuation">)</span><span class="token punctuation">:</span>
-            <span class="token keyword">if</span> index <span class="token operator">==</span> len<span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
-                output<span class="token punctuation">.</span>append<span class="token punctuation">(</span>p<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-                <span class="token keyword">return</span>
-            <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>len<span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-                <span class="token keyword">if</span> <span class="token operator">not</span> used<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">:</span>
-                    p<span class="token punctuation">.</span>append<span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
-                    used<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">True</span>
-                    backtrack<span class="token punctuation">(</span>index <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span>p<span class="token punctuation">)</span>
-                    used<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span>
-                    p<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<h3 id="滑动过程："><a href="#滑动过程：" class="headerlink" title="滑动过程："></a>滑动过程：</h3><p>滑动窗口左右两边界均是闭的，最开始滑动窗口里没有元素，即 <code>left = 0,right = -1</code>，res 用来存储最长窗口的长度，初始为 0。移动窗口，窗口向右判断下一个元素是否已存在于窗口内，如果不存在，则将该元素加入到窗口中，即 <code>right + 1</code>,左边界不动。如果窗口内已经存在该元素，则将该元素加入到窗口中，即 <code>right + 1</code> ，同时将窗口左边界移到窗口中已存在的元素的位置，即 <code>left + 1</code> 直到窗口中重复元素的位置为止。重复上述步骤。在窗口滑动的过程中，每得到一个新的窗口，都将与 res 中的值比较，res 中始终存放的是之前所有窗口的最长长度。</p>
+<h3 id="判断元素在窗口中是否已经存在"><a href="#判断元素在窗口中是否已经存在" class="headerlink" title="判断元素在窗口中是否已经存在"></a>判断元素在窗口中是否已经存在</h3><p>通过计算频率的方法判断是否已经存在，python 中使用 collection 中的 defaultdict 类来存放窗口中每个元素的频率。每向窗口中加入一个元素，则该元素的频率设为 1 ，每去掉一个元素，则将移除元素的频率重置为 0 ，所以窗口中每个元素的频率都为 1，若下一个元素的频率为 0 时，说明窗口中不存在该元素，若下一个元素的频率为 1 时，说明该元素在窗口中已经存在。</p>
+<p>解题代码：</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> collections <span class="token keyword">import</span> defaultdict
 
 
-        output <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-        <span class="token keyword">if</span> <span class="token operator">not</span> nums<span class="token punctuation">:</span>
-            <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-        used <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token boolean">False</span><span class="token punctuation">]</span> <span class="token operator">*</span> len<span class="token punctuation">(</span>nums<span class="token punctuation">)</span>
-        backtrack<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-        <span class="token keyword">return</span> output</code></pre>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">lengthOfLongestSubstring</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> s<span class="token punctuation">:</span> str<span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> int<span class="token punctuation">:</span>
+        <span class="token comment" spellcheck="true"># sliding window</span>
+
+        freq <span class="token operator">=</span> defaultdict<span class="token punctuation">(</span>int<span class="token punctuation">)</span>
+
+        <span class="token comment" spellcheck="true"># [left..right] as a sliding window</span>
+        left <span class="token operator">=</span> res <span class="token operator">=</span> <span class="token number">0</span>
+        right <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span>
+
+        <span class="token keyword">while</span> left <span class="token operator">&lt;</span> len<span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> right <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">&lt;</span> len<span class="token punctuation">(</span>s<span class="token punctuation">)</span> <span class="token operator">and</span> freq<span class="token punctuation">[</span>s<span class="token punctuation">[</span>right <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+                right <span class="token operator">+=</span> <span class="token number">1</span>
+                freq<span class="token punctuation">[</span>s<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                freq<span class="token punctuation">[</span>s<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">-=</span> <span class="token number">1</span>
+                left <span class="token operator">+=</span> <span class="token number">1</span>
+            res <span class="token operator">=</span> max<span class="token punctuation">(</span>res<span class="token punctuation">,</span> right <span class="token operator">-</span> left <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">return</span> res
+
+res <span class="token operator">=</span> Solution<span class="token punctuation">(</span><span class="token punctuation">)</span>
+output <span class="token operator">=</span> res<span class="token punctuation">.</span>lengthOfLongestSubstring<span class="token punctuation">(</span><span class="token string">"abcabcbb"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>output<span class="token punctuation">)</span></code></pre>
+<p><em>【完】</em></p>
 
             </div>
             <hr/>
@@ -605,9 +611,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《LeetCode第 46 题：全排列》
+                    《LeetCode第 3 题：无重复字符的最长子串》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/23/79th/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/11/sliding-window/" property="cc:attributionName"
                rel="cc:attributionURL">
                 李艳祥
             </a> 采用
@@ -648,7 +654,7 @@
         repo: 'lixiansen2048.github.io',
         owner: 'lixiansen2048',
         admin: "lixiansen2048",
-        id: '2019-07-23T10-33-38',
+        id: '2019-08-11T19-00-38',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -669,77 +675,29 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/07/29/phone1/">
+                <a href="/2019/08/11/sliding-window/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="边充电边玩手机会爆炸么">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="LeetCode第 3 题：无重复字符的最长子串">
                         
-                        <span class="card-title">边充电边玩手机会爆炸么</span>
+                        <span class="card-title">LeetCode第 3 题：无重复字符的最长子串</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            看到家人老表群里转发的视频，“边充电边玩手机导致爆炸造成两孩童死亡”，结果去证实了一下，果然是谣言，遂寻思查找资料并写下这篇文章。
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-29
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/随笔/" class="post-category" target="_blank">
-                                    随笔
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/手机/" target="_blank">
-                        <span class="chip bg-color">手机</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/07/23/79th/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="LeetCode第 46 题：全排列">
-                        
-                        <span class="card-title">LeetCode第 46 题：全排列</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            回溯法 是一种通过探索所有可能的候选解来找出所有的解的算法，对于排列组合问题通常使用回溯法
+                            滑动窗口是数组/字符串问题中常用的抽象概念。 窗口通常是在数组/字符串中由开始和结束索引定义的一系列元素的集合。
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-23
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-11
                             </span>
                         <span class="publish-author">
                             
@@ -757,9 +715,62 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/回溯法/" target="_blank">
-                        <span class="chip bg-color">回溯法</span>
+                    <a href="/tags/python-3/" target="_blank">
+                        <span class="chip bg-color">python 3</span>
                     </a>
+                    
+                    <a href="/tags/哈希表/" target="_blank">
+                        <span class="chip bg-color">哈希表</span>
+                    </a>
+                    
+                    <a href="/tags/滑动窗口/" target="_blank">
+                        <span class="chip bg-color">滑动窗口</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/08/11/QSort/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="LeetCode第 215 题：数组中的第 k 个最大元素">
+                        
+                        <span class="card-title">LeetCode第 215 题：数组中的第 k 个最大元素</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            快速排序算法的一种变形：快速选择算法，通常用来在未排序的数组中寻找第 k 小/大的元素，快速选择及其变形是现实应用中最常用的高效选择算法
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/leetcode-题解/" class="post-category" target="_blank">
+                                    leetcode 题解
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
                     
                     <a href="/tags/python-3/" target="_blank">
                         <span class="chip bg-color">python 3</span>
@@ -767,6 +778,10 @@
                     
                     <a href="/tags/数组/" target="_blank">
                         <span class="chip bg-color">数组</span>
+                    </a>
+                    
+                    <a href="/tags/排序/" target="_blank">
+                        <span class="chip bg-color">排序</span>
                     </a>
                     
                 </div>

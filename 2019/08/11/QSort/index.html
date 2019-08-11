@@ -421,11 +421,11 @@
 <h3 id="题目来源：LeetCode-第-215-题"><a href="#题目来源：LeetCode-第-215-题" class="headerlink" title="题目来源：LeetCode 第 215 题"></a>题目来源：<a href="https://leetcode-cn.com/problems/kth-largest-element-in-an-array/" target="_blank" rel="noopener">LeetCode 第 215 题</a></h3><p>这道题有三个解法,都是力扣官方题解提供的，我首先想到的前两种，但觉得有点投机取巧，因为是直接调用的python内置函数，一句话就能搞定。力扣官方提供第三种解法，利用经典的快速排序算法的一种变形解决。因为基础不牢，我看了很长时间才弄明白,所以打算写下来加深理解。文章主要介绍第三种解法：</p>
 <blockquote>
 <ol>
-<li><strong>排序：</strong> 先对数组进行排序，然后直接返回倒数第 k 个元素，python中直接使用语句 <code>sorted(nums)[-k]</code> 求出最后结果。算法的时间复杂度为 O(NlogN)，空间复杂度为O(1)</li>
-<li><strong>堆：</strong> 创建一个大顶堆，将数组的元素加入到堆中，并保证堆的大小小于等于 k，然后堆中就保留了前 k 个最大元素，这样，堆顶元素就是正确答案。python中有内置的该方法直接求出堆的前 k个最大元素，语句<code>heapq.nlargest(k, nums)[-1]</code>，就可得出最后结果。时间复杂度 : O(Nlogk)，空间复杂度 : O(k)，用于存储堆元素</li>
+<li><strong>排序：</strong> 先对数组进行排序，然后直接返回倒数第 k 个元素，python中直接使用语句 <code>sorted(nums)[-k]</code> 求出最后结果。算法的时间复杂度为 <code>O(NlogN)</code>，空间复杂度为<code>O(1)</code></li>
+<li><strong>堆：</strong> 创建一个大顶堆，将数组的元素加入到堆中，并保证堆的大小小于等于 k，然后堆中就保留了前 k 个最大元素，这样，堆顶元素就是正确答案。python中有内置的该方法直接求出堆的前 k个最大元素，语句<code>heapq.nlargest(k, nums)[-1]</code>，就可得出最后结果。时间复杂度 : <code>O(Nlogk)</code>，空间复杂度 : <code>O(k)</code>，用于存储堆元素</li>
 </ol>
 </blockquote>
-<h3 id="快速选择算法："><a href="#快速选择算法：" class="headerlink" title="快速选择算法："></a>快速选择算法：</h3><p>快速选择的思路与快速排序一致，选择一个元素作为基准对数组进行分区，使得基准左侧的元素都小于基准的值，右侧的元素都大于基准的值，不同的是，快速选择并不递归访问双边，而是递归到一侧寻找，这使得平均时间复杂度由 O(NlogN) 降低到O(N)。</p>
+<h3 id="快速选择算法："><a href="#快速选择算法：" class="headerlink" title="快速选择算法："></a>快速选择算法：</h3><p>快速选择的思路与快速排序一致，选择一个元素作为基准对数组进行分区，使得基准左侧的元素都小于基准的值，右侧的元素都大于基准的值，不同的是，快速选择并不递归访问双边，而是递归到一侧寻找，这使得平均时间复杂度由 <code>O(NlogN)</code> 降低到<code>O(N)</code>。</p>
 <h4 id="python-实现快速排序，分而治之-递归"><a href="#python-实现快速排序，分而治之-递归" class="headerlink" title="python 实现快速排序，分而治之+递归"></a>python 实现快速排序，分而治之+递归</h4><p>对基准两侧分别进行递归操作。选择基准，并申请额外的两个空间，遍历数组，将小于枢轴的元素加入到 left 数组，大于基准的元素加入到 right 数组。</p>
 <p>快速排序代码：</p>
 <pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">quick_sort</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">:</span>    
@@ -745,30 +745,29 @@ output <span class="token operator">=</span> res<span class="token punctuation">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/08/11/QSort/">
+                <a href="/2019/08/11/sliding-window/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="LeetCode第 215 题：数组中的第 k 个最大元素">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="LeetCode第 3 题：无重复字符的最长子串">
                         
-                        <span class="card-title">LeetCode第 215 题：数组中的第 k 个最大元素</span>
+                        <span class="card-title">LeetCode第 3 题：无重复字符的最长子串</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            快速排序算法的一种变形：快速选择算法，通常用来在未排序的数组中寻找第 k 小/大的元素，快速选择及其变形是现实应用中最常用的高效选择算法
+                            滑动窗口是数组/字符串问题中常用的抽象概念。 窗口通常是在数组/字符串中由开始和结束索引定义的一系列元素的集合。
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-11
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-11
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -781,7 +780,6 @@ output <span class="token operator">=</span> res<span class="token punctuation">
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -789,12 +787,12 @@ output <span class="token operator">=</span> res<span class="token punctuation">
                         <span class="chip bg-color">python 3</span>
                     </a>
                     
-                    <a href="/tags/数组/" target="_blank">
-                        <span class="chip bg-color">数组</span>
+                    <a href="/tags/哈希表/" target="_blank">
+                        <span class="chip bg-color">哈希表</span>
                     </a>
                     
-                    <a href="/tags/排序/" target="_blank">
-                        <span class="chip bg-color">排序</span>
+                    <a href="/tags/滑动窗口/" target="_blank">
+                        <span class="chip bg-color">滑动窗口</span>
                     </a>
                     
                 </div>
@@ -1001,7 +999,7 @@ output <span class="token operator">=</span> res<span class="token punctuation">
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">3.6k</span>
+                <span class="white-color">4.2k</span>
             
 
             
