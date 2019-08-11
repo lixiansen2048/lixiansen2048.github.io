@@ -4,11 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="边充电边玩手机会爆炸么, 初学者">
-    <meta name="description" content="边玩手机边充电真的会爆炸么
-
-结论 ： 使用正规充电器，手机边玩边充电发生爆炸的几率几乎为零。需要注意的是：第一、充电尽量使用原装充电器。第二、不随意搭配充电设备。第三、充电环境温度要适宜。第四、及时清理充电口。第五、尽量不要边玩边充电。
-">
+    <meta name="keywords" content="LeetCode第 215 题：数组中的第 k 个最大元素, 初学者">
+    <meta name="description" content="快速选择算法解决数组中的第 k 个最大元素
+题目来源：LeetCode 第 215 题这道题有三个解法,都是力扣官方题解提供的，我首先想到的前两种，但觉得有点投机取巧，因为是直接调用的python内置函数，一句话就能搞定。力扣官方提供第三种">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>边充电边玩手机会爆炸么 | 初学者</title>
+    <title>LeetCode第 215 题：数组中的第 k 个最大元素 | 初学者</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -245,13 +243,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        边充电边玩手机会爆炸么
+                        LeetCode第 215 题：数组中的第 k 个最大元素
                     </div>
                 </div>
             </div>
@@ -362,8 +360,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/手机/" target="_blank">
-                                <span class="chip bg-color">手机</span>
+                            <a href="/tags/python-3/" target="_blank">
+                                <span class="chip bg-color">python 3</span>
+                            </a>
+                        
+                            <a href="/tags/数组/" target="_blank">
+                                <span class="chip bg-color">数组</span>
+                            </a>
+                        
+                            <a href="/tags/排序/" target="_blank">
+                                <span class="chip bg-color">排序</span>
                             </a>
                         
                     </div>
@@ -374,8 +380,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/随笔/" class="post-category" target="_blank">
-                                随笔
+                            <a href="/categories/leetcode-题解/" class="post-category" target="_blank">
+                                leetcode 题解
                             </a>
                         
                     </div>
@@ -386,21 +392,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-07-29
+                    2019-08-11
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        836
+                        983
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        4 分
                     </div>
                     
                 
@@ -411,28 +417,111 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="边玩手机边充电真的会爆炸么"><a href="#边玩手机边充电真的会爆炸么" class="headerlink" title="边玩手机边充电真的会爆炸么"></a>边玩手机边充电真的会爆炸么</h1><hr>
-<blockquote>
-<p><strong>结论</strong> ： 使用正规充电器，手机边玩边充电发生爆炸的几率几乎为零。需要注意的是：第一、充电尽量使用原装充电器。第二、不随意搭配充电设备。第三、充电环境温度要适宜。第四、及时清理充电口。第五、尽量不要边玩边充电。</p>
-</blockquote>
-<h3 id="手机爆炸是怎么发生的"><a href="#手机爆炸是怎么发生的" class="headerlink" title="手机爆炸是怎么发生的"></a>手机爆炸是怎么发生的</h3><p>我们通常说的边玩手机边充电、边打电话边充电会发生危险，一般都是指电池的爆炸。</p>
+                <h1 id="快速选择算法解决数组中的第-k-个最大元素"><a href="#快速选择算法解决数组中的第-k-个最大元素" class="headerlink" title="快速选择算法解决数组中的第 k 个最大元素"></a>快速选择算法解决数组中的第 k 个最大元素</h1><hr>
+<h3 id="题目来源：LeetCode-第-215-题"><a href="#题目来源：LeetCode-第-215-题" class="headerlink" title="题目来源：LeetCode 第 215 题"></a>题目来源：<a href="https://leetcode-cn.com/problems/kth-largest-element-in-an-array/" target="_blank" rel="noopener">LeetCode 第 215 题</a></h3><p>这道题有三个解法,都是力扣官方题解提供的，我首先想到的前两种，但觉得有点投机取巧，因为是直接调用的python内置函数，一句话就能搞定。力扣官方提供第三种解法，利用经典的快速排序算法的一种变形解决。因为基础不牢，我看了很长时间才弄明白,所以打算写下来加深理解。文章主要介绍第三种解法：</p>
 <blockquote>
 <ol>
-<li>从手机充电的电路设计角度来看，在充电过程中使用手机，手机运行程序所需的电能来源于电源而非电池，这时电池充电跟手机的使用是分开的，互不影响。</li>
-<li>电池充满电后，会停止充电。并且由于电池端电压小于外接电路的电压，电池也不会放电。</li>
-<li>充电状态下的手机可以作为一个正常的电器使用，一般不会发生爆炸，<strong>使用正规充电器，手机边玩边充电发生爆炸的几率几乎为零。</strong>但是如果使用的是劣质或者山寨的充电器，很有可能因为质量不过关，出现手机电路不稳定，造成电池异常发热，导致手机有可能发生爆炸。</li>
+<li><strong>排序：</strong> 先对数组进行排序，然后直接返回倒数第 k 个元素，python中直接使用语句 <code>sorted(nums)[-k]</code> 求出最后结果。算法的时间复杂度为 O(NlogN)，空间复杂度为O(1)</li>
+<li><strong>堆：</strong> 创建一个大顶堆，将数组的元素加入到堆中，并保证堆的大小小于等于 k，然后堆中就保留了前 k 个最大元素，这样，堆顶元素就是正确答案。python中有内置的该方法直接求出堆的前 k个最大元素，语句<code>heapq.nlargest(k, nums)[-1]</code>，就可得出最后结果。时间复杂度 : O(Nlogk)，空间复杂度 : O(k)，用于存储堆元素</li>
 </ol>
 </blockquote>
-<p>大家可能经常从电视上或者新闻中，看到不少因为边充电边玩手机的原因而导致手机爆炸的问题，其实这个问题和电池是没有关系的，主要还是因为充电时使用了不匹配的充电器，或者是第三方充电器。更有甚者，是手机在出厂时，电池就有问题，存在着安全隐患，一般情况下是不会有这种事情发生的。</p>
-<h3 id="怎样充电更安全"><a href="#怎样充电更安全" class="headerlink" title="怎样充电更安全"></a>怎样充电更安全</h3><blockquote>
+<h3 id="快速选择算法："><a href="#快速选择算法：" class="headerlink" title="快速选择算法："></a>快速选择算法：</h3><p>快速选择的思路与快速排序一致，选择一个元素作为基准对数组进行分区，使得基准左侧的元素都小于基准的值，右侧的元素都大于基准的值，不同的是，快速选择并不递归访问双边，而是递归到一侧寻找，这使得平均时间复杂度由 O(NlogN) 降低到O(N)。</p>
+<h4 id="python-实现快速排序，分而治之-递归"><a href="#python-实现快速排序，分而治之-递归" class="headerlink" title="python 实现快速排序，分而治之+递归"></a>python 实现快速排序，分而治之+递归</h4><p>对基准两侧分别进行递归操作。选择基准，并申请额外的两个空间，遍历数组，将小于枢轴的元素加入到 left 数组，大于基准的元素加入到 right 数组。</p>
+<p>快速排序代码：</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">quick_sort</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">:</span>    
+    <span class="token triple-quoted-string string">"""QuickSort"""</span>  
+
+    <span class="token comment" spellcheck="true"># entry and exit  </span>
+    <span class="token keyword">if</span> len<span class="token punctuation">(</span>data<span class="token punctuation">)</span> <span class="token operator">>=</span> <span class="token number">2</span><span class="token punctuation">:</span>         
+        <span class="token comment" spellcheck="true"># select an element as the pvoit</span>
+        povit <span class="token operator">=</span> data<span class="token punctuation">[</span>len<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token operator">//</span><span class="token number">2</span><span class="token punctuation">]</span>       
+
+        <span class="token comment" spellcheck="true"># define the list to the left and right of the pvoit </span>
+        left<span class="token punctuation">,</span> right <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>  
+
+        <span class="token comment" spellcheck="true"># remove the povit from the origin list </span>
+        data<span class="token punctuation">.</span>remove<span class="token punctuation">(</span>povit<span class="token punctuation">)</span>        
+
+        <span class="token keyword">for</span> num <span class="token keyword">in</span> data<span class="token punctuation">:</span>            
+            <span class="token keyword">if</span> num <span class="token operator">>=</span> povit<span class="token punctuation">:</span>                
+                right<span class="token punctuation">.</span>append<span class="token punctuation">(</span>num<span class="token punctuation">)</span>            
+            <span class="token keyword">else</span><span class="token punctuation">:</span>                
+                left<span class="token punctuation">.</span>append<span class="token punctuation">(</span>num<span class="token punctuation">)</span>        
+        <span class="token keyword">return</span> quick_sort<span class="token punctuation">(</span>left<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">[</span>povit<span class="token punctuation">]</span> <span class="token operator">+</span> quick_sort<span class="token punctuation">(</span>right<span class="token punctuation">)</span>    
+    <span class="token keyword">else</span><span class="token punctuation">:</span>        
+        <span class="token keyword">return</span> data
+
+<span class="token comment" spellcheck="true"># example：</span>
+array <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">15</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">15</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">17</span><span class="token punctuation">,</span><span class="token number">12</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>quick_sort<span class="token punctuation">(</span>array<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># output = [1, 2, 2, 3, 4, 5, 5, 6, 7, 7, 9, 9, 10, 12, 15, 15, 17]</span>
+</code></pre>
+<h4 id="python-实现快速选择算法"><a href="#python-实现快速选择算法" class="headerlink" title="python 实现快速选择算法"></a>python 实现快速选择算法</h4><p>对基准的一侧进行递归，寻找第 k 个最大的元素。代码中 partition() 函数作用是对数组进行分区，通过以下三步实现：</p>
 <ol>
-<li><strong>充电尽量使用原装充电器。</strong>非原装充电器可能会出现手机充电缓慢、损坏电池的情况。如果使用劣质充电器，还有可能造成安全隐患。</li>
-<li><strong>不随意搭配充电设备。</strong>充电器与USB充电线混用，很可能会导致充电速度变慢，无法给手机充电的情况。为手机充电时建议选择与手机电流适配的充电设备进行充电。</li>
-<li><strong>充电环境温度要适宜。</strong>在低温环境下，锂电池的低温保护机制会使得手机电池不发生化学反应，从而导致充电缓慢的情况发生。温度过高的环境中充电很可能会损失锂电池，造成安全隐患。</li>
-<li><strong>及时清理充电口。</strong>充电口长时间暴露在外面，会产生灰尘堆积，导致手机充电接触不良，影响充电速度。记得定期清洁手机充电口，一笔米娜出现灰尘堵塞。</li>
-<li><strong>尽量不要边玩边充电。</strong>边玩边充电会加剧手机发热。手机长时间处于这种状态，会导致手机寿命急剧缩短，严重时甚至会引发火灾。如果必须边玩边充电，应注意观察手机的情况，一旦出现高温异常，应立即停止操作。</li>
+<li>将基准移到最右侧；</li>
+<li>将小于基准的数移到 pivot_fix 的左侧；</li>
+<li>将基准移回 pivot_fix 的位置。</li>
 </ol>
-</blockquote>
+<p>最后该函数返回分区后基准的位置。将位置返回到select()函数中之后，判断该位置是否为 k_smallest(即 len(nums) - k),若是，则返回，若大于 k_smallest，则遍历基准的左侧部分数组，重复之前操作，反之，则遍历基准右侧部分数组，重复之前操作。</p>
+<p>力扣第 215 题解题代码：</p>
+<pre class=" language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">findKthLargest</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">,</span> k<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """</span>
+        <span class="token keyword">def</span> <span class="token function">partition</span><span class="token punctuation">(</span>left<span class="token punctuation">,</span> right<span class="token punctuation">,</span> pivot_index<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+            <span class="token comment" spellcheck="true"># the value of pivot</span>
+            pivot <span class="token operator">=</span> nums<span class="token punctuation">[</span>pivot_index<span class="token punctuation">]</span>
+
+            <span class="token comment" spellcheck="true"># move the pivot to the right of nums</span>
+            nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">,</span>nums<span class="token punctuation">[</span>pivot_index<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>pivot_index<span class="token punctuation">]</span><span class="token punctuation">,</span>nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span>
+
+            pivot_fix <span class="token operator">=</span> left
+            <span class="token comment" spellcheck="true"># move the smaller than the value of pivot to the left</span>
+            <span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span>left<span class="token punctuation">,</span>right<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;</span> pivot<span class="token punctuation">:</span>
+                    nums<span class="token punctuation">[</span>pivot_fix<span class="token punctuation">]</span><span class="token punctuation">,</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>nums<span class="token punctuation">[</span>pivot_fix<span class="token punctuation">]</span>
+                    pivot_fix <span class="token operator">+=</span> <span class="token number">1</span>
+
+            <span class="token comment" spellcheck="true"># move the pivot to the original index</span>
+            nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">,</span>nums<span class="token punctuation">[</span>pivot_fix<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>pivot_fix<span class="token punctuation">]</span><span class="token punctuation">,</span>nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span>
+
+            <span class="token keyword">return</span> pivot_fix
+
+        <span class="token keyword">def</span> <span class="token function">select</span><span class="token punctuation">(</span>left<span class="token punctuation">,</span> right<span class="token punctuation">,</span> k_smallest<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token triple-quoted-string string">"""
+            Returns the k-th smallest element of list within left..right
+            """</span>
+            <span class="token keyword">if</span> left <span class="token operator">==</span> right<span class="token punctuation">:</span>
+                <span class="token keyword">return</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span>
+
+            <span class="token comment" spellcheck="true"># select pviot</span>
+            pivot_index <span class="token operator">=</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span>
+
+            pivot_index <span class="token operator">=</span> partition<span class="token punctuation">(</span>left<span class="token punctuation">,</span>right<span class="token punctuation">,</span>pivot_index<span class="token punctuation">)</span>
+
+            <span class="token keyword">if</span> pivot_index <span class="token operator">==</span> k_smallest<span class="token punctuation">:</span>
+                <span class="token keyword">return</span> nums<span class="token punctuation">[</span>pivot_index<span class="token punctuation">]</span>
+
+            <span class="token comment" spellcheck="true"># do left</span>
+            <span class="token keyword">elif</span> pivot_index <span class="token operator">></span> k_smallest<span class="token punctuation">:</span>
+                <span class="token keyword">return</span> select<span class="token punctuation">(</span>left<span class="token punctuation">,</span>pivot_index <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span>k_smallest<span class="token punctuation">)</span>
+
+            <span class="token comment" spellcheck="true"># do right</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                <span class="token keyword">return</span> select<span class="token punctuation">(</span>pivot_index <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span>right<span class="token punctuation">,</span>k_smallest<span class="token punctuation">)</span>
+
+        <span class="token comment" spellcheck="true"># kth largest is (n - k)th smallest</span>
+        <span class="token keyword">return</span> select<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> len<span class="token punctuation">(</span>nums<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> len<span class="token punctuation">(</span>nums<span class="token punctuation">)</span> <span class="token operator">-</span> k<span class="token punctuation">)</span>
+
+
+res <span class="token operator">=</span> Solution<span class="token punctuation">(</span><span class="token punctuation">)</span>
+output <span class="token operator">=</span> res<span class="token punctuation">.</span>findKthLargest<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> k <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>output<span class="token punctuation">)</span></code></pre>
 <p><em>【完】</em></p>
 
             </div>
@@ -592,9 +681,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《边充电边玩手机会爆炸么》
+                    《LeetCode第 215 题：数组中的第 k 个最大元素》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/29/phone1/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/11/QSort/" property="cc:attributionName"
                rel="cc:attributionURL">
                 李艳祥
             </a> 采用
@@ -635,7 +724,7 @@
         repo: 'lixiansen2048.github.io',
         owner: 'lixiansen2048',
         admin: "lixiansen2048",
-        id: '2019-07-29T12-33-38',
+        id: '2019-08-11T13-00-38',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -656,9 +745,68 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2019/08/11/QSort/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="LeetCode第 215 题：数组中的第 k 个最大元素">
+                        
+                        <span class="card-title">LeetCode第 215 题：数组中的第 k 个最大元素</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            快速排序算法的一种变形：快速选择算法，通常用来在未排序的数组中寻找第 k 小/大的元素，快速选择及其变形是现实应用中最常用的高效选择算法
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/leetcode-题解/" class="post-category" target="_blank">
+                                    leetcode 题解
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/python-3/" target="_blank">
+                        <span class="chip bg-color">python 3</span>
+                    </a>
+                    
+                    <a href="/tags/数组/" target="_blank">
+                        <span class="chip bg-color">数组</span>
+                    </a>
+                    
+                    <a href="/tags/排序/" target="_blank">
+                        <span class="chip bg-color">排序</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2019/07/29/mood1/">
                     <div class="card-image">
@@ -676,9 +824,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-29
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-29
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -696,63 +844,6 @@
                     
                     <a href="/tags/读书/" target="_blank">
                         <span class="chip bg-color">读书</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/07/23/79th/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="LeetCode第 46 题：全排列">
-                        
-                        <span class="card-title">LeetCode第 46 题：全排列</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            回溯法 是一种通过探索所有可能的候选解来找出所有的解的算法，对于排列组合问题通常使用回溯法
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-23
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/leetcode-题解/" class="post-category" target="_blank">
-                                    leetcode 题解
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/回溯法/" target="_blank">
-                        <span class="chip bg-color">回溯法</span>
-                    </a>
-                    
-                    <a href="/tags/python-3/" target="_blank">
-                        <span class="chip bg-color">python 3</span>
-                    </a>
-                    
-                    <a href="/tags/数组/" target="_blank">
-                        <span class="chip bg-color">数组</span>
                     </a>
                     
                 </div>
